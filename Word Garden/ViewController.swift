@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("in viewDidLoad, is the guessedLetterField the first responder?", guessedLetterField.isFirstResponder)
     }
     
     func updateUIAfterGuess() {
@@ -27,19 +26,14 @@ class ViewController: UIViewController {
         guessedLetterField.text = ""
     }
     @IBAction func guessedLetterFieldChanged(_ sender: UITextField) {
-        print("Hey the guessed letter field changed")
     }
     
     @IBAction func doneKeyPressed(_ sender: UITextField) {
-        print("in doneKeyPressed, is the guessedLetterField the first responder before updateUIAfterGuess?", guessedLetterField.isFirstResponder)
         updateUIAfterGuess()
-        print("in doneKeyPressed, is the guessedLetterField the first responder after updateUIAfterGuess?", guessedLetterField.isFirstResponder)
     }
     
     @IBAction func guessLetterButtonPressed(_ sender: UIButton) {
-        print("in guessLetterButtonPressed, is the guessedLetterField the first responder before updateUIAfterGuess?", guessedLetterField.isFirstResponder)
         updateUIAfterGuess()
-        print("in guessLetterButtonPressed, is the guessedLetterField the first responder after updateUIAfterGuess?", guessedLetterField.isFirstResponder)
     }
     
     @IBAction func playAgainButtonPressed(_ sender: UIButton) {
