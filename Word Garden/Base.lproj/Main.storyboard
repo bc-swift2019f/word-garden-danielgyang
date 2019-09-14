@@ -25,12 +25,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-FL-RMe">
-                                <rect key="frame" x="233" y="158" width="70" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've Made 0 Guesses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esa-U5-3Ix">
                                 <rect key="frame" x="20" y="224" width="374" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,8 +36,8 @@
                                 <rect key="frame" x="20" y="359" width="374" height="537"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Cs8-ux-k68">
-                                <rect key="frame" x="111" y="186" width="192" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Cs8-ux-k68">
+                                <rect key="frame" x="113.5" y="187" width="187" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="py3-2E-cEh">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -55,9 +49,9 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLA-5H-17n">
-                                        <rect key="frame" x="42" y="0.0" width="150" height="30"/>
+                                        <rect key="frame" x="42" y="0.0" width="145" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="dop-ob-OSa"/>
+                                            <constraint firstAttribute="width" constant="145" id="dop-ob-OSa"/>
                                         </constraints>
                                         <state key="normal" title="Guess This Letter"/>
                                     </button>
@@ -68,13 +62,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play Again"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-FL-RMe">
+                                <rect key="frame" x="20" y="158" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Cs8-ux-k68" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="142" id="7ZG-wp-CWZ"/>
-                            <constraint firstItem="gdh-FL-RMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BAY-Kd-BKp"/>
                             <constraint firstItem="Cs8-ux-k68" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qo5-7h-5hZ"/>
-                            <constraint firstItem="Cs8-ux-k68" firstAttribute="top" secondItem="gdh-FL-RMe" secondAttribute="bottom" constant="8" id="V2u-4z-JGk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
