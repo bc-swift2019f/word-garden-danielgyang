@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             playAgainButton.isHidden = false
             guessedLetterField.isEnabled = false
             guessLetterButton.isEnabled = false
-            guessCountLabel.text = "You're out of guesses. Try again?"
+            guessCountLabel.text = "You're out of wrong guesses. Try again?"
         } else if !revealedWord.contains("_") {
             // You've won a game!
             playAgainButton.isHidden = false

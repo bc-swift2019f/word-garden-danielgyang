@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many guesses to uncover the hidden word?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AY7-yi-cbV">
-                                <rect key="frame" x="8" y="44" width="151" height="49"/>
+                                <rect key="frame" x="20" y="44" width="374" height="49"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've made 0 guesses" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esa-U5-3Ix">
-                                <rect key="frame" x="8" y="225" width="151" height="60"/>
+                                <rect key="frame" x="20" y="224.5" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="iWc-30-6Zp"/>
                                 </constraints>
@@ -66,14 +66,14 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-m6-ilb">
-                                <rect key="frame" x="62" y="305" width="71" height="30"/>
+                                <rect key="frame" x="171.5" y="304.5" width="71" height="30"/>
                                 <state key="normal" title="Play Again"/>
                                 <connections>
                                     <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uD5-9v-K0k"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-FL-RMe">
-                                <rect key="frame" x="8" y="128" width="151" height="21"/>
+                                <rect key="frame" x="20" y="128" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="efA-2W-SQy"/>
                                 </constraints>
@@ -84,8 +84,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdh-FL-RMe" secondAttribute="trailing" constant="20" id="3FB-RH-Px3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AY7-yi-cbV" secondAttribute="trailing" constant="20" id="4DY-Ai-Idg"/>
-                            <constraint firstItem="gdh-FL-RMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5NR-NC-AGP"/>
                             <constraint firstItem="esa-U5-3Ix" firstAttribute="top" secondItem="Cs8-ux-k68" secondAttribute="bottom" constant="37.5" id="64i-Jx-1jx"/>
                             <constraint firstItem="AY7-yi-cbV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="92h-5A-Xky"/>
                             <constraint firstItem="gdh-FL-RMe" firstAttribute="top" secondItem="AY7-yi-cbV" secondAttribute="bottom" constant="35" id="CSf-mI-7hT"/>
@@ -94,7 +94,7 @@
                             <constraint firstItem="esa-U5-3Ix" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rhd-ew-WVu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="esa-U5-3Ix" secondAttribute="trailing" constant="20" id="X38-RD-z9d"/>
                             <constraint firstItem="f1V-m6-ilb" firstAttribute="top" secondItem="esa-U5-3Ix" secondAttribute="bottom" constant="20" id="Zp7-sP-1xY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdh-FL-RMe" secondAttribute="trailing" constant="20" id="oTW-de-7QM"/>
+                            <constraint firstItem="gdh-FL-RMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r8E-RU-3gi"/>
                             <constraint firstItem="f1V-m6-ilb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sET-pE-6qU"/>
                             <constraint firstItem="AY7-yi-cbV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vZ2-cb-dxu"/>
                         </constraints>
